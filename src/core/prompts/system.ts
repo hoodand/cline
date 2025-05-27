@@ -34,7 +34,9 @@ export const SYSTEM_PROMPT = async (
 	// Model-specific editor tool content and switching logic
 	const altEditorTool = getAltEditorToolContent()
 
-	const isAlt: boolean = modelId.toLowerCase().includes("claude-opus-4") || modelId.toLowerCase().includes("claude-sonnet-4")
+	// Switch logic for alternate editor tool content
+	//const isAlt: boolean = modelId.toLowerCase().includes("claude-opus-4") || modelId.toLowerCase().includes("claude-sonnet-4")
+	const isAlt = null
 
 	if (isAlt) {
 		editsContent = altEditorTool
